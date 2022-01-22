@@ -26,7 +26,7 @@ async def gooe_search(client, message):
     reply_msg += f"🔹Rᴇᴘᴏ: **[HERE](https://github.com/ProXSammY/RaiChu)\n**"
     reply_msg += f"🔸Pʏᴛʜᴏɴ: **3.8\n\n**"
     reply_msg += f"🍹Sᴇʀᴠᴇʀꜱ Fᴜɴᴄᴛɪᴏɴɪɴɢ Nᴏʀᴍᴀʟ🍹"
-    await client.send_photo(message.chat.id , Alive_pic , reply_msg)
+    await client.send_photo(message.chat.id , reply_msg)
     await message.delete()
     if vcbot is not None:
         vcbot.send_message(message.chat.id, "Voice player alive")
