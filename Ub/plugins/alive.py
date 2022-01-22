@@ -12,6 +12,7 @@ import time
 Alive_pic = "https://telegra.ph/file/a8fff8cafaf00ee379280.jpg", 
 
 @blaze.on_message(filters.command(["alive"], prefixes=f"{HNDLR}"))
+@authorized_users_only
 async def gooe_search(client, message):
     start_time = time.time()
     uptime = (datetime.now() - START_TIME)
