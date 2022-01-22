@@ -3,7 +3,7 @@ from config import HNDLR
 import psutil
 from psutil._common import bytes2human
 from pyrogram import filters
-from Ub import blaze
+from pyrogram import Client blaze
 
 ALIVE_IMG = "https://telegra.ph/file/a8fff8cafaf00ee379280.jpg"
 
