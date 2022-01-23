@@ -17,6 +17,6 @@ Alive_pic = "https://telegra.ph/file/a8fff8cafaf00ee379280.jpg",
 async def get_sysinfo(client, m):
      m_reply = await m.reply_photo(
                                  photo="https://telegra.ph/file/a8fff8cafaf00ee379280.jpg",
-                                 caption="**Kʀɪᴘʏᴀ Dʜʏᴀɴ Dᴇ**\n**Rᴀɪᴄʜᴜ Usᴇʀʙᴏᴛ Aʙʜɪ Jɪɴᴅᴀ Hᴀɪ**\n\n𝗩𝗘𝗥𝗦𝗜𝗢𝗡𝗦:-\n\n𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠:{version}\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠:64 bit\n\n**[USERBOT-SUPPORT](t.me/RaichuOfficiL)\n[USERBOT-CHANNE](t.me/RaichuUpdate), 
+                                 caption="**Kʀɪᴘʏᴀ Dʜʏᴀɴ Dᴇ😹**\n**Rᴀɪᴄʜᴜ Usᴇʀʙᴏᴛ Aʙʜɪ Jɪɴᴅᴀ Hᴀɪ🔥🔥**\n\n𝗩𝗘𝗥𝗦𝗜𝗢𝗡𝗦:-\n\n𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠:{version}\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠:64 bit\n\n**[USERBOT-SUPPORT](t.me/RaichuOfficiL)\n[USERBOT-CHANNE](t.me/RaichuUpdate), 
 
  ) 
