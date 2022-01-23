@@ -8,25 +8,15 @@ from Ub import START_TIME
 from datetime import datetime
 import time
 
+__version__== "1.3.6"
 
 Alive_pic = "https://telegra.ph/file/a8fff8cafaf00ee379280.jpg", 
 
 @blaze.on_message(filters.command(["alive"], prefixes=f"{HNDLR}"))
 @authorized_users_only
-async def gooe_search(client, message):
-    start_time = time.time()
-    uptime = (datetime.now() - START_TIME)
-    reply_msg = f"**MADE IN 🇮🇳 , MADE WITH 😻**"
-    reply_msg += "------------------\n\n"
-    end_time = time.time()
-    ping_time = round((end_time - start_time) * 1000, 3)
-    reply_msg += f"🔸Pɪɴɢ Tɪᴍᴇ: **{ping_time}ms\n**"
-    reply_msg += f"🔹Kɪɴɢ Uᴘᴛɪᴍᴇ: **{uptime}\n**"
-    reply_msg += f"🔸Sᴜᴘᴘᴏʀᴛ: **@RaiChuOffiCial\n**"
-    reply_msg += f"🔹Rᴇᴘᴏ: **[HERE](https://github.com/ProXSammY/RaiChu)\n**"
-    reply_msg += f"🔸Pʏᴛʜᴏɴ: **3.8\n\n**"
-    reply_msg += f"🍹Sᴇʀᴠᴇʀꜱ Fᴜɴᴄᴛɪᴏɴɪɴɢ Nᴏʀᴍᴀʟ🍹"
-    await client.send_photo(message.chat.id , reply_msg)
-    await message.delete()
-    if vcbot is not None:
-        vcbot.send_message(message.chat.id, "Voice player alive")
+async def get_sysinfo(client, m):
+     m_reply = await m.reply_photo(
+                                 photo="https://telegra.ph/file/a8fff8cafaf00ee379280.jpg",
+                                 caption="**Kʀɪᴘʏᴀ Dʜʏᴀɴ Dᴇ**\n**Rᴀɪᴄʜᴜ Usᴇʀʙᴏᴛ Aʙʜɪ Jɪɴᴅᴀ Hᴀɪ**\n\n𝗩𝗘𝗥𝗦𝗜𝗢𝗡𝗦:-\n\n𝗣𝗬𝗥𝗢𝗚𝗥𝗔𝗠:{version}\n𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠:64 bit\n\n**[USERBOT-SUPPORT](t.me/RaichuOfficiL)\n[USERBOT-CHANNE](t.me/RaichuUpdate), 
+
+ ) 
