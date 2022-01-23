@@ -1,11 +1,11 @@
 import asyncio
 from pyrogram import idle
 from config import SUPPORT, bot
-
-
+from Ub import ubot
 
 async def main():
     await bot.start()
+    await ubot.start()
     await bot.join_chat("RaichuOfficial")            
     await bot.send_message(
             SUPPORT,
