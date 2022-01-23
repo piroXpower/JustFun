@@ -1,3 +1,11 @@
+from Ub.helpers.decorators import authorized_users_only
+from config import HNDLR
+import psutil
+from psutil._common import bytes2human
+from pyrogram import filters
+from pyrogram import Client as blaze
+
+
 @blaze.on_message(filters.command(["ban"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 def ban(bot, message):
