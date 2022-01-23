@@ -1,27 +1,17 @@
-from Ub import ubot as blaze
-from Ub.status import *
-from telethon import events, Button
-from telethon.tl.functions.channels import EditBannedRequest
-from telethon.tl.types import ChatBannedRights
+@blaze.on_message(filters.command(["ban"], prefixes=f"{HNDLR}"))
+@authorized_users_only
+def ban(bot, message):
+    await blaze.kick_chat_member(message.chat.id, message.reply_to_message.from_user.id)
+    await blaze.send_message(message.chat.id, f"{message.reply_to_message.from_user.mention} Banned Successfully")
+try:
+   except Exception as exc:
+    await message.reply_to_message.reply(f"{exc}")
 
-
-@blaze.on(events.NewMessage(pattern="^[.?/]kick ?(.*)"))
-@is_admin
-async def ban(event, perm):
-    if event.is_private:
-        await event.reply("This cmd is made to be used in groups not PM")
-        return
-    if not perm.ban_users:
-        await event.reply("You are missing the following rights to use this command:CanBanUsers!")
-        return
-    input_str = event.pattern_match.group(1)
-    msg = await event.get_reply_message()
-    if not input_str and not msg:
-        await event.reply("Reply to a user or give its username to ban him")
-        return
-    replied_user = msg.sender_id
-    us = msg.sender.username
-    info = await Evil.get_entity(us)
-    await Evil(EditBannedRequest(event.chat_id, replied_user, ChatBannedRights(until_date=None, view_messages=True)))
-    await event.reply(f"Succesfully Banned [{info.first_name}](tg://user?id={replied_user}) in {event.chat.title}")
-
+@blaze.on_message(filters.command(["ban"], prefixes=f"{HNDLR}"))
+@authorized_users_only
+def ban(bot, message):
+    await blaze.unban_chat_member(message.chat.id, message.reply_to_message.from_user.id)
+    await blaze.send_message(message.chat.id, f"{message.reply_to_message.from_user.mention} Unban Successfully")
+try:
+   except Exception as exc:
+    await message.reply_to_message.reply(f"{exc}")
