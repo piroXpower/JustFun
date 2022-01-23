@@ -12,7 +12,6 @@ if os.path.exists(".env"):
 API_ID = int(os.getenv("API_ID", "12553697"))
 API_HASH = os.getenv("API_HASH", "ddbd36c19c379ce3e23eaf3a29a02ba7")
 SESSION = os.getenv("SESSION", "")
-STRING_SESSION = os.getenv("STRING_SESSION", "")
 
 HNDLR = os.getenv("HNDLR", ".")
 SUPPORT = os.getenv("SUPPORT", "RaichuOfficial")
