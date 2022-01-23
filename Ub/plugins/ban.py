@@ -1,4 +1,4 @@
-from Ub import tlthn as blaze
+from Ub import ubot as blaze
 from Ub.status import *
 from telethon import events, Button
 from telethon.tl.functions.channels import EditBannedRequest
